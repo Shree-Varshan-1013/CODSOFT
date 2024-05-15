@@ -610,10 +610,6 @@ li{
   position: absolute;
 }
 
-.relative{
-  position: relative;
-}
-
 .sticky{
   position: sticky;
 }
@@ -635,6 +631,10 @@ li{
   margin-bottom: 0px;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -647,8 +647,8 @@ li{
   margin-left: 0.75rem;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
+.mr-16{
+  margin-right: 4rem;
 }
 
 .mr-5{
@@ -657,10 +657,6 @@ li{
 
 .mt-3{
   margin-top: 0.75rem;
-}
-
-.mr-16{
-  margin-right: 4rem;
 }
 
 .block{
@@ -675,32 +671,24 @@ li{
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.h-9{
-  height: 2.25rem;
 }
 
 .h-screen{
   height: 100vh;
 }
 
-.w-9{
-  width: 2.25rem;
-}
-
-.w-\[70px\]{
-  width: 70px;
-}
-
 .w-full{
   width: 100%;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .max-w-xs{
@@ -709,16 +697,6 @@ li{
 
 .flex-shrink-0{
   flex-shrink: 0;
-}
-
-.-translate-x-2{
-  --tw-translate-x: -0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-full{
-  --tw-translate-x: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform{
@@ -751,13 +729,21 @@ li{
   justify-content: center;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-x-3{
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
 }
 
-.rounded-full{
-  border-radius: 9999px;
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .rounded-lg{
@@ -766,21 +752,6 @@ li{
 
 .border{
   border-width: 1px;
-}
-
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-90{
@@ -799,10 +770,6 @@ li{
 
 .to-thYellow{
   --tw-gradient-to: #C4B269 var(--tw-gradient-to-position);
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .p-4{
@@ -833,10 +800,6 @@ li{
   text-align: center;
 }
 
-.text-right{
-  text-align: right;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -850,6 +813,10 @@ li{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .font-medium{
@@ -880,9 +847,9 @@ li{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.shadow{
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -908,10 +875,6 @@ li{
   transition-duration: 150ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .duration-500{
   transition-duration: 500ms;
 }
@@ -926,14 +889,13 @@ li{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.focus\:outline-none:focus{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 @media (min-width: 640px){
   .sm\:flex{
     display: flex;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -952,6 +914,10 @@ li{
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row{
@@ -984,6 +950,10 @@ li{
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 

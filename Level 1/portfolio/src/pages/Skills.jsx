@@ -1,8 +1,7 @@
-import Swal from 'sweetalert2';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-const Interactive = () => {
+const Skills = () => {
 
     useEffect(() => {
         Aos.init();
@@ -143,4 +142,4 @@ const Interactive = () => {
     )
 }
 
-export default Interactive
+export default Skills
