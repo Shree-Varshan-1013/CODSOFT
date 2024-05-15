@@ -9,58 +9,31 @@ const Progress = () => {
     }, []);
 
     return (
-        <>
-            <div className='hidden lg:flex w-full h-screen'>
-                <div style={{ width: "100%", display: "flex" }}>
-                    <div data-aos="zoom-in-right"
-                        data-aos-duration="3000">
-                        <div>
-                            <img src='/img/target.gif' style={{ marginLeft: "70px", marginTop: "50px" }} />
-                        </div>
+        
+            <div className="max-w-sm w-full lg:max-w-full lg:flex">
+                <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{"backgroundImage": "url(/img/ghost.png)"}} title="Woman holding a mug">
+                </div>
+                <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div className="mb-8">
+                        <p className="text-sm text-gray-600 flex items-center">
+                            <svg className="fill-current text-gray-500 w-3 h-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" >
+                                <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z" />
+                            </svg>
+                            Members only
+                        </p>
+                        <div className="text-gray-900 font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                        <p className="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
                     </div>
-                    <div style={{ width: "50%", marginTop: "100px", marginLeft: "60px" }}>
-                        <div data-aos="zoom-in-left"
-                            data-aos-duration="3000">
-                            <div style={{ flexDirection: "column" }}>
-                                <div>
-                                    <h1 className='text--gradient text-right'>Track Your Progess</h1>
-                                </div>
-                                <div style={{ color: "white", display: "flex", justifyContent: "flex-end" }}>
-                                    <div style={{ width: "70%" }}>
-                                        <p style={{ fontSize: "1.3rem", fontWeight: "100", textAlign: "justify" }}>
-                                            Tracking your progress is more than just observing milestones,
-                                            It involves a reflective gaze at the distance covered,
-                                            Embrace the process, celebrate the steps, and let your progress be the map to your aspirations.
-                                        </p>
-                                    </div>
-                                </div>
+                    <div className="flex items-center">
+                        <img className="w-10 h-10 rounded-full mr-4" src="/img/jonathan.jpg" alt="Avatar of Jonathan Reinink" />
+                            <div className="text-sm">
+                                <p className="text-gray-900 leading-none">Jonathan Reinink</p>
+                                <p className="text-gray-600">Aug 18</p>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
-            <div className='flex lg:hidden w-full h-screen'>
-                <div style={{ width: "100%", display: "flex", marginTop: "100px" }}>
-                    <div>
-                        <div style={{ display: "flex", flexDirection: "row", margin: "30px" }}>
-                            <div>
-                                <img src='/img/target.gif' width={500} />
-                            </div>
-                            <div>
-                                <h1 className='text--gradient text-right'style={{fontSize:"50px", lineHeight:"70px", marginBottom:"20px"}}>Track Your Progess</h1>
-                            </div>
-                        </div>
-                        <div style={{ width: "100%", color:"white" }}>
-                            <p style={{ fontSize: "1.1rem", fontWeight: "100", textAlign: "justify", margin:"30px" }}>
-                                Tracking your progress is more than just observing milestones,
-                                It involves a reflective gaze at the distance covered,
-                                Embrace the process, celebrate the steps, and let your progress be the map to your aspirations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div >
-        </>
+        
     )
 }
 
