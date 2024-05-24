@@ -1,6 +1,7 @@
 import React from 'react';
 import GradientBtn from './GradientBtn';
 import AnimatedGradientText from './magicui/AnimatedGradientText';
+import BorderBeam from './magicui/BorderBeam';
 
 function Projects() {
 
@@ -44,34 +45,37 @@ function Projects() {
     ];
 
     return (
-        <div data-aos="fade-up"
-            data-aos-duration="3000">
-            <div style={{ marginBottom: "100px" }}>
-                <div style={{ marginTop: "100px", display: "flex", justifyContent: "center" }}>
-                    <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5 mb-3' name="features">Projects</h1>
-                </div>
-                <div style={{ margin: "50px" }}>
-                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                        {data.map((ele) => (
-                            <div key={ele.id} className="max-w-sm rounded overflow-hidden shadow-lg">
-                                <img className="w-full" src={ele.img} alt="content" />
-                                <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
-                                    <div className="font-bold text-xl mb-2 text-white">{ele.title}</div>
-                                    <p className="text-base" style={{ color: "#637592" }}>{ele.description}</p>
-                                </div>
-                                <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
-                                    <a href={ele.link} target="_blank" rel="noopener noreferrer">
-                                        <AnimatedGradientText className="text-xl text-white">
-                                            Github
-                                        </AnimatedGradientText>
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
+        <>
+            <div style={{ marginBottom: "100px" }} name="projects">
+                <div data-aos="zoom-in-up"
+                    data-aos-duration="3000">
+                    <div style={{ marginTop: "100px", display: "flex", justifyContent: "center" }}>
+                        <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5 mb-3' name="features">Projects</h1>
                     </div>
-                </div>
-            </div >
-        </div>
+                    <div style={{ margin: "50px" }}>
+                        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                            {data.map((ele) => (
+                                <div key={ele.id} className="relative max-w-sm rounded overflow-hidden shadow-lg">
+                                    <BorderBeam className="absolute inset-0 z-100" size={250} duration={12} delay={9} />
+                                    <img className="w-full" src={ele.img} alt="content" />
+                                    <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
+                                        <div className="font-bold text-xl mb-2 text-white">{ele.title}</div>
+                                        <p className="text-base" style={{ color: "#637592" }}>{ele.description}</p>
+                                    </div>
+                                    <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
+                                        <a href={ele.link} target="_blank" rel="noopener noreferrer">
+                                            <AnimatedGradientText className="text-xl text-white">
+                                                Github
+                                            </AnimatedGradientText>
+                                        </a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div >
+            </div>
+        </>
     );
 }
 

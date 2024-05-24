@@ -33,9 +33,6 @@ const ContactPage = () => {
                         <h1 style={{ lineHeight: "50px", marginBottom: "10px" }}>
                             Reach me out
                         </h1>
-                        <p style={{ marginBottom: "50px" }}>
-                            We’re here to help and answer any question you might have, We look forward to <br />hearing from you .
-                        </p>
                     </div>
                     <div>
                         <ul className="flex" style={{ cursor: 'none' }}>
@@ -68,9 +65,6 @@ const ContactPage = () => {
                             <h1 style={{ lineHeight: "50px", marginBottom: "10px", fontSize: "35px" }}>
                                 Let us know how we can help
                             </h1>
-                            <p style={{ marginBottom: "40px" }}>
-                                We’re here to help and answer any question you might have, We look forward to hearing from you .
-                            </p>
                         </div>
                         <div>
                             <ul className="flex" style={{ cursor: 'none', flexDirection: "column" }}>

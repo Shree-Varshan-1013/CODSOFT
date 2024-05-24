@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import video from '/videos/heroVideo.mp4';
 import Typewriter from 'typewriter-effect';
-import { useNavigate } from 'react-router-dom';
-import { useScramble } from "use-scramble";
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import '../styles/Hero.css';
@@ -22,8 +20,8 @@ const HeroSection = () => {
 
     return (
         <>
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <div className="hidden md:flex lg:flex h-25 w-full video-container" name="home">
+            <div className="hidden md:flex lg:flex h-25 w-full video-container" name="home">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <div className="backdrop-desktop"></div>
                     <video src={video} autoPlay loop muted />
                     <div className="overlay-content w-full">

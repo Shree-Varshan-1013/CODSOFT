@@ -147,8 +147,6 @@
 import React from 'react'
 import IconCloud from './magicui/IconCloud'
 
-
-
 const Skills = () => {
 
     const slugs = [
@@ -160,6 +158,12 @@ const Skills = () => {
         "react",
         "mui",
         "vite",
+        "framer",
+        "redux",
+        "reactrouter",
+        "visualstudiocode",
+        "bootstrap",
+        "firebase",
 
         // Backend Development
         "nodedotjs",
@@ -184,19 +188,24 @@ const Skills = () => {
         "c",
         "cplusplus",
         "java",
-        "php"
+        "php",
+
+        //Testing
+        "selenium"
     ];
 
 
     return (
-        <div data-aos="fade-up"
-        data-aos-duration="3000">
-            <div style={{ display: "flex", justifyContent: "space-evenly", alignContent: "center", alignItems: "center" }}>
-                <div className="relative overflow-hidden flex h-full w-[50%] items-center justify-center">
-                    <IconCloud iconSlugs={slugs} />
-                </div>
-                <div className='w-[20%]'>
-                    <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5' name="features">Tech Stacks</h1>
+        <div>
+            <div data-aos="fade-up"
+                data-aos-duration="3000">
+                <div style={{ display: "flex", justifyContent: "space-evenly", alignContent: "center", alignItems: "center" }} name="skills">
+                    <div className="relative overflow-hidden flex h-full w-[50%] items-center justify-center">
+                        <IconCloud iconSlugs={slugs} />
+                    </div>
+                    <div className='w-[20%]'>
+                        <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5' name="features">Tech Stacks</h1>
+                    </div>
                 </div>
             </div>
         </div>
