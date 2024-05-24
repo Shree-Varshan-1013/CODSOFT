@@ -17,11 +17,11 @@ const About = () => {
                     data-aos-duration="2000">
                     <div style={{ width: "100%", display: "flex", justifyContent: "space-evenly", marginTop: "100px" }}>
                         <div style={{ width: "50%", marginTop: "50px" }}>
-                            <div style={{ flexDirection: "column" }}>
+                            <div>
                                 <div>
-                                    <h1 className='text--gradient'>About Me</h1>
+                                    <h1 className='text-7xl border-l-4 border-red-600 text-white pl-3'>About Me</h1>
                                 </div>
-                                <div style={{ color: "white" }}>
+                                <div className='mt-9 text-white'>
                                     <p style={{ fontSize: "1.3rem", fontWeight: "100", textAlign: "justify" }}>
                                         Highly motivated and detail-oriented Software Developer with a strong background in team collaboration,
                                         punctuality, and creative problem-solving. Experienced in developing innovative software solutions and
@@ -32,7 +32,7 @@ const About = () => {
                             </div>
                         </div>
                         <div >
-                            <img src='/img/shree-photo.jpg' style={{ marginTop:"40px", boxShadow: "-60px -50px 0 -40px #68b8d1, 50px 50px 0 -40px #68b8d1" }} width={200} />
+                            <img src='/img/shree-photo.jpg' style={{ marginTop:"40px", boxShadow: "-50px -50px 0 -40px #68b8d1, 50px 50px 0 -40px #C4B269" }} width={200} />
                         </div>
                     </div>
                 </div>

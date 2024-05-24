@@ -9,6 +9,7 @@ function Projects() {
             title: "Lab Management",
             description: "Spearheaded the digital transformation of laboratory to reduce the paper work",
             link: "https://github.com/Shree-Varshan-1013/Lab-Digitalization",
+            img: "/img/lab-bi.png",
             type: "FullStack",
             techs: ["Laravel", "SqLite"]
         },
@@ -17,6 +18,7 @@ function Projects() {
             title: "Dialog Duo",
             description: "Career guidance support to students and Resume Generator for job seekers",
             link: "https://github.com/Shree-Varshan-1013/DialogDuo",
+            img: "/img/chatbot-bi.png",
             type: "FullStack",
             techs: ["MongoDB", "Express JS", "React JS", "Node JS"]
         },
@@ -25,6 +27,7 @@ function Projects() {
             title: "Zerver",
             description: "Web-based application for managing server loggings for AICTE",
             link: "https://github.com/Shree-Varshan-1013/Zerver",
+            img: "/img/server-bi.png",
             type: "FrontEnd",
             techs: ["HTML", "CSS", "Javascript"]
         },
@@ -33,6 +36,7 @@ function Projects() {
             title: "Webzy",
             description: "Online mobile recharge web application to recharge their mobile services",
             link: "https://github.com/Shree-Varshan-1013/webZy",
+            img: "/img/webzy-bi.png",
             type: "FullStack",
             techs: ["React JS", "SpringBoot", "PostgreSQL"]
         },
@@ -40,12 +44,14 @@ function Projects() {
 
     return (
         <div style={{ marginBottom: "100px" }}>
-            <h1 className='text-white text-center text--gradient' name="features">Projects</h1>
+            <div style={{ margin: "10px", display: "flex", justifyContent: "center" }}>
+                <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5 mb-10' name="features">Projects</h1>
+            </div>
             <div style={{ margin: "50px" }}>
                 <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {data.map((ele) => (
                         <div key={ele.id} className="max-w-sm rounded overflow-hidden shadow-lg">
-                            <img className="w-full" src="https://dummyimage.com/1201x501" alt="content" />
+                            <img className="w-full" src={ele.img} alt="content" />
                             <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
                                 <div className="font-bold text-xl mb-2 text-white">{ele.title}</div>
                                 <p className="text-base" style={{ color: "#637592" }}>{ele.description}</p>

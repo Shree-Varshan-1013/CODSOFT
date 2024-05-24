@@ -27,7 +27,7 @@ const ContactPage = () => {
             <div className="hidden lg:flex" style={{ color: "black", backgroundColor: "white", padding: "80px" }} name="contact">
                 <div className="w-full mx-auto px-4">
                     <div>
-                        <h2 style={{ fontWeight: "900", fontFamily:"nunito" }}>
+                        <h2 style={{ fontWeight: "900" }}>
                             Contact
                         </h2>
                         <h1 style={{ lineHeight: "50px", marginBottom: "10px" }}>

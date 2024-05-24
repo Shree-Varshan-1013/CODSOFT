@@ -1,23 +1,23 @@
 import HeroSection from './HeroSection';
-import Features from './Features';
 import Navbar from './Navbar';
 import ContactPage from './Contact';
 import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
+import Footer from './Footer';
 
 const Home = () => {
 
     return (
-        <>
+        <div id="smooth-wrapper">
             <Navbar/>
             <HeroSection />
             <About />
             <Skills />
             <Projects />
-            <Features />
             <ContactPage />
-        </>
+            <Footer/>
+        </div>
     )
 }
 
