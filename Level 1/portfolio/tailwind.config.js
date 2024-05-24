@@ -6,6 +6,7 @@ export default {
       animation: {
         gradient: "gradient 8s linear infinite",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+        shimmer: "shimmer 8s infinite",
       },
       keyframes: {
         gradient: {
@@ -18,13 +19,21 @@ export default {
             "offset-distance": "100%",
           },
         },
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
       },
-      colors:{
-        thBlue:"#68b8d1",
-        thBlue2:"#8cb3a2",
-        thYellow:"#C4B269",
-        thYellow2:"#f8d95b",
-        thBlack:"#181c1e"
+      colors: {
+        thBlue: "#68b8d1",
+        thBlue2: "#8cb3a2",
+        thYellow: "#C4B269",
+        thYellow2: "#f8d95b",
+        thBlack: "#181c1e"
       }
     },
   },

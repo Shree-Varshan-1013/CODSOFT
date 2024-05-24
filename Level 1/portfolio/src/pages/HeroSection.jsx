@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import '../styles/Hero.css';
 import ScrambleText from './Scrambletext';
 import AnimatedGradientText from './magicui/AnimatedGradientText';
+import { TiHeart } from "react-icons/ti";
 
 const HeroSection = () => {
 
@@ -34,7 +35,8 @@ const HeroSection = () => {
                             <p className='text-2xl'>
                                 <Typewriter
                                     options={{
-                                        strings: ['While destiny != "achieved" do { Keep coding(); }'],
+                                        strings: ["Embarking on adventures, exploring life with joy and excitement !"],
+                                        cursor: '✨',
                                         autoStart: true,
                                         loop: true,
                                     }} /></p>

@@ -18,7 +18,7 @@ const ScrambleText = ({ strings }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % strings.length);
-    }, 8000);
+    }, 9000);
 
     return () => clearInterval(interval);
   }, []);

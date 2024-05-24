@@ -1,4 +1,3 @@
-import React from 'react';
 import { cn } from '../../lib/utils.js'; // Adjust the import path as necessary
 
 const AnimatedGradientText = ({ children, className }) => {

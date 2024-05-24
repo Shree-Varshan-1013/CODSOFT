@@ -16,15 +16,15 @@ const Education = () => {
                     </div>
                     <div className="relative flex flex-col pl-10">
                         <div className="before:absolute before:-left-[14px] before:top-0 before:w-[25px] before:h-[25px] before:rounded-full before:bg-red-600">
-                            <h3 className="text-xl font-semibold tracking-wide" style={{ fontSize: '1.6rem', fontWeight: '300', textAlign: 'justify' }}>Kamala Subramanium Matric Higher Secondary</h3>
+                            <h3 className="text-xl font-semibold tracking-wide" style={{ fontSize: '1.6rem', fontWeight: '300', textAlign: 'justify' }}>Kamala Subramanium Matric Higher Secondary School</h3>
                             <p className="text-medium tracking-wide uppercase text-gray-600">SSLC</p>
                             <time className="text-medium tracking-wide uppercase text-gray-600">March 2019</time>
-                            <p className="mt-1">
+                            <p className="mt-1" style={{ fontSize: '1.2rem'}}>
                                 Percentage : 92.4
                             </p>
                             <p className="text-medium tracking-wide uppercase text-gray-600">HSC (MATHS - CS)</p>
                             <time className="text-medium tracking-wide uppercase text-gray-600">MAY 2021</time>
-                            <p className="mt-1">
+                            <p className="mt-1" style={{ fontSize: '1.2rem'}}>
                                 Percentage : 94.27
                             </p>
                         </div>
@@ -44,7 +44,7 @@ const Education = () => {
                                         FINAL YEAR
                                     </div>
                                 </div>
-                                <p className="mt-1">
+                                <p className="mt-1" style={{ fontSize: '1.2rem'}}>
                                     CGPA : 8.83
                                 </p>
                             </div>

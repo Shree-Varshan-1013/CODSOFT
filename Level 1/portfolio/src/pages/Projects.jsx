@@ -2,6 +2,7 @@ import React from 'react';
 import GradientBtn from './GradientBtn';
 import AnimatedGradientText from './magicui/AnimatedGradientText';
 import BorderBeam from './magicui/BorderBeam';
+import ShinyText from './magicui/ShinyText';
 
 function Projects() {
 
@@ -60,7 +61,7 @@ function Projects() {
                                     <img className="w-full" src={ele.img} alt="content" />
                                     <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
                                         <div className="font-bold text-xl mb-2 text-white">{ele.title}</div>
-                                        <p className="text-base" style={{ color: "#637592" }}>{ele.description}</p>
+                                        <ShinyText className="text-base" style={{ color: "#637592" }}>{ele.description}</ShinyText>
                                     </div>
                                     <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
                                         <a href={ele.link} target="_blank" rel="noopener noreferrer">

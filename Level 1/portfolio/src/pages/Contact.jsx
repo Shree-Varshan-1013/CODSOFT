@@ -27,10 +27,10 @@ const ContactPage = () => {
             <div className="hidden lg:flex" style={{ color: "black", backgroundColor: "white", padding: "80px" }} name="contact">
                 <div className="w-full mx-auto px-4">
                     <div>
-                        <h2 style={{ fontWeight: "900" }}>
+                        <h2 style={{ fontWeight: "900", fontSize:"72px" }}>
                             Contact
                         </h2>
-                        <h1 style={{ lineHeight: "50px", marginBottom: "10px" }}>
+                        <h1 style={{fontSize:"30px", lineHeight: "50px", marginBottom: "10px" }}>
                             Reach me out
                         </h1>
                     </div>
@@ -38,7 +38,7 @@ const ContactPage = () => {
                         <ul className="flex" style={{ cursor: 'none' }}>
                             {
                                 contactMethods.map((item, idx) => (
-                                    <li key={idx} style={{ cursor: "initial", marginRight: "30px" }}>
+                                    <li key={idx} style={{ cursor: "initial", marginRight: "30px", fontSize:"20px" }}>
                                         <div style={{ display: "flex" }}>
                                             <div>
                                                 {item.icon}
