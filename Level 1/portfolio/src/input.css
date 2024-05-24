@@ -10,7 +10,7 @@ html {
 .video-container video {
     @apply top-[40%] left-1/2 min-w-full min-h-full w-auto h-auto;
   }
-  
+
 @font-face {
   font-family: "Aeonik";
   src: url("/fonts/aeonik-bold.woff2") format("woff2"),
@@ -67,8 +67,7 @@ html {
 
 body {
   font-family: "Aeonik";
-  background: #000000;
-  color: #282829;
+  background: hsl(0, 0%, 0%);
   font-style: normal;
   font-weight: 400;
   max-width: 100vw;

@@ -1,5 +1,6 @@
 import React from 'react';
 import GradientBtn from './GradientBtn';
+import AnimatedGradientText from './magicui/AnimatedGradientText';
 
 function Projects() {
 
@@ -44,8 +45,8 @@ function Projects() {
 
     return (
         <div style={{ marginBottom: "100px" }}>
-            <div style={{ margin: "10px", display: "flex", justifyContent: "center" }}>
-                <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5 mb-10' name="features">Projects</h1>
+            <div style={{ marginTop: "80px", display: "flex", justifyContent: "center" }}>
+                <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5 mb-5' name="features">Projects</h1>
             </div>
             <div style={{ margin: "50px" }}>
                 <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -57,13 +58,17 @@ function Projects() {
                                 <p className="text-base" style={{ color: "#637592" }}>{ele.description}</p>
                             </div>
                             <div className="px-6 py-4" style={{ backgroundColor: "#131315" }}>
-                                <a className={`inline-block bg-gradient-to-r from-thBlue to-thYellow py-2 px-6 text-black rounded-lg duration-150 hover:scale-110`} href={ele.link} target="_blank" rel="noopener noreferrer">Github</a>
+                                <a href={ele.link} target="_blank" rel="noopener noreferrer">
+                                    <AnimatedGradientText className="text-xl text-white">
+                                        Github
+                                    </AnimatedGradientText>
+                                </a>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

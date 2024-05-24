@@ -7,6 +7,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import '../styles/Hero.css';
 import ScrambleText from './Scrambletext';
+import AnimatedGradientText from './magicui/AnimatedGradientText';
 
 const HeroSection = () => {
 
@@ -19,8 +20,6 @@ const HeroSection = () => {
     useEffect(() => {
         Aos.init();
     }, []);
-
-    const navigate = useNavigate();
 
     return (
         <>
@@ -37,18 +36,15 @@ const HeroSection = () => {
                         <div>
                             <p className='text-2xl'>
                                 <Typewriter
-                                options={{
-                                    strings: ['While destiny != "achieved" do { Keep coding(); }'],
-                                    autoStart: true,
-                                    loop: true,
-                                }} /></p>
+                                    options={{
+                                        strings: ['While destiny != "achieved" do { Keep coding(); }'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }} /></p>
                             <div className='flex justify-center' style={{ paddingTop: '40px' }}>
-                                <div style={{ width: "180px", margin: "20px" }}>
-                                    <button className='button-28' onClick={() => navigate('/sign-in')}>Resume</button>
-                                </div>
-                                <div style={{ width: "180px", margin: "20px" }}>
-                                    <button className='button-27 bg-gradient-to-r from-thBlue to-thYellow ' onClick={() => navigate('/sign-up')} style={{ border: "2px solid #68b8d1" }}>Sign Up</button>
-                                </div>
+                                <AnimatedGradientText className="text-xl">
+                                    View Resume
+                                </AnimatedGradientText>
                             </div>
                         </div>
                     </div>

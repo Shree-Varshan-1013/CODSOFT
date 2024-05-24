@@ -5,18 +5,20 @@ import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
 import Footer from './Footer';
+import Education from './Education';
 
 const Home = () => {
 
     return (
         <div id="smooth-wrapper">
-            <Navbar/>
-            <HeroSection />
+            <Navbar />
+            <HeroSection /> 
             <About />
             <Skills />
             <Projects />
             <ContactPage />
-            <Footer/>
+            <Education />
+            <Footer />
         </div>
     )
 }
