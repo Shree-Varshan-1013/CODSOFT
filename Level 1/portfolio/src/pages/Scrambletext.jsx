@@ -11,14 +11,14 @@ const ScrambleText = ({ strings }) => {
     speed: 0.18,
     tick: 2,
     chance: 0,
-    seed: 5,
+    seed: 4,
     ignore: [" "],
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % strings.length);
-    }, 10000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);

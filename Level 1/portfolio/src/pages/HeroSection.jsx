@@ -13,8 +13,7 @@ const HeroSection = () => {
 
     const strings = [
         "Hi, I'm Shree Varshan",
-        "a passionate full-stack developer",
-        "Coding with passion and purpose.",
+        "A Passionate Software Developer",
     ];
 
     useEffect(() => {
@@ -23,7 +22,7 @@ const HeroSection = () => {
 
     return (
         <>
-            <div data-aos="zoom-out" data-aos-duration="2000">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div className="hidden md:flex lg:flex h-25 w-full video-container" name="home">
                     <div className="backdrop-desktop"></div>
                     <video src={video} autoPlay loop muted />
@@ -42,9 +41,11 @@ const HeroSection = () => {
                                         loop: true,
                                     }} /></p>
                             <div className='flex justify-center' style={{ paddingTop: '40px' }}>
-                                <AnimatedGradientText className="text-xl">
-                                    View Resume
-                                </AnimatedGradientText>
+                                <a href="https://drive.google.com/file/d/17XWfn4XRJxJGDm2p8sTb3SkyRW6UroF7/view?usp=sharing" target='_blank'>
+                                    <AnimatedGradientText className="text-xl">
+                                        View Resume
+                                    </AnimatedGradientText>
+                                </a>
                             </div>
                         </div>
                     </div>
