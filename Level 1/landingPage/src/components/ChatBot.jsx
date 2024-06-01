@@ -1,20 +1,8 @@
-import React from 'react'
-import { useState, useEffect, useRef } from 'react'
-
 const ChatBot = () => {
-    const [botMessages, setBotMessages] = useState([]);
-    const chatEndRef = useRef(null);
+
     const fixedUserMessages = ['Hi', 'Can you help me?', 'I need guidance in career counseling?'];
     const fixedBotMessages = ['Hello!', 'Of course, I will try my best.', 'Please tell me your concern.'];
 
-    const scrollToBottom = () => {
-        chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-
-    useEffect(() => {
-        scrollToBottom();
-        setBotMessages(fixedBotMessages);
-    }, [botMessages]);
 
     return (
         <div className='flex m-10'>
