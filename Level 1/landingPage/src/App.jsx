@@ -1,4 +1,5 @@
 import ChatBot from './components/ChatBot'
+import Contact from './components/Contact'
 import Content from './components/Content'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <Content />
       <ChatBot />
+      <Contact />
       <Footer />
     </>
   )

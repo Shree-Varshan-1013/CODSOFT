@@ -6,44 +6,25 @@ const Content = () => {
             <div className=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="flex flex-col w-full max-w-3xl mx-auto prose text-left prose-blue">
                     <div className="w-full mx-auto">
-                        <h1 className="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Inspiration</h1>
+                        <h1 className="mb-8 text-4xl font-bold tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl leading-7 text-justify">Inspiration</h1>
                         <h2>Recent studies have revealed that as much as 90% of students opt for a wrong career path due to a lack of career guidance and the persisting gap between skills and aptitudes.
                             So, our team decided to leverage Artificial Intelligence to bring forth DialogDuo, which serves as your perfect career guidance companion throughout your career journey.</h2>
                     </div>
                 </div>
-                <div className="flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
+                <div className="flex flex-col items-center pb-3 mx-auto my-10 border-b border-gray-200 max-w-8xl sm:flex-row">
                     <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" className="w-10 h-10" viewBox="0 0 24 24">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 20 20"><path fill="#525252" d="M3.33 8L10 12l10-6l-10-6L0 6h10v2zM0 8v8l2-2.22V9.2zm10 12l-5-3l-2-1.2v-6l7 4.2l7-4.2v6z" /></svg>
                     </div>
                     <div className="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
                         <h2>Achieve Career Success with Smart, Real-Time Advice!</h2>
-                        <p>Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
-
                     </div>
                 </div>
-                <div className="flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
+                <div className="flex flex-col items-center pb-3 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
                     <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" className="w-10 h-10" viewBox="0 0 24 24">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                            <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24"><path fill="#525252" d="M13 9h5.5L13 3.5zM6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m8 18v-1c0-1.33-2.67-2-4-2s-4 .67-4 2v1zm-4-8a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" /></svg>
                     </div>
                     <div className="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
-                        <h2>Elevate Your Career with Our Resume Builder and Guidance!</h2>
-                        <p>Get Expert Career Advice Now!</p>
+                        <h2>Elevate Your Career with Our Awesome Resume Builder!</h2>
                     </div>
                 </div>
             </div>
