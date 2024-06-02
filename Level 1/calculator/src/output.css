@@ -1039,6 +1039,10 @@ html {
   }
 }
 
+.relative {
+  position: relative;
+}
+
 .top-10 {
   top: 2.5rem;
 }
@@ -1110,12 +1114,22 @@ html {
   place-content: center;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .gap-4 {
   gap: 1rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-lg {
@@ -1162,6 +1176,14 @@ html {
   padding-right: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1172,6 +1194,10 @@ html {
 
 .align-middle {
   vertical-align: middle;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-3xl {
@@ -1189,6 +1215,42 @@ html {
   line-height: 1.75rem;
 }
 
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1199,6 +1261,20 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.ease-linear {
+  transition-timing-function: linear;
+}
+
 /* * {
     outline: 1px solid red;
 } */
+
+.first-letter\:text-5xl::first-letter {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.last\:text-5xl:last-child {
+  font-size: 3rem;
+  line-height: 1;
+}
