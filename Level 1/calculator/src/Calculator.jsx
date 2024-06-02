@@ -4,7 +4,7 @@ const Calculator = () => {
     return (
         <div className='min-h-screen w-full m-0 p-0 grid place-content-center'>
             <div className='container top-10'>
-                <div className='flex lg:min-w-1/3 min-w-1/2 max-w-screen-lg bg-black flex-col gap-5 mx-auto p-4 text-white rounded-lg cursor-pointer'>
+                <div className='flex lg:min-w-1/3 min-w-1/2 max-w-screen-lg bg-black flex-col gap-5 mx-auto p-4 text-white rounded-lg cursor-pointer select-none'>
                     <div className='grid grid-cols-4 gap-4 w-full text-center'>
                         <div className='bg-slate-300 col-span-4 text-right pr-5 p-5 text-black text-3xl rounded-lg'>
                             0

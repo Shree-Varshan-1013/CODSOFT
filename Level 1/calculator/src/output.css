@@ -1084,6 +1084,12 @@ html {
   cursor: pointer;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
