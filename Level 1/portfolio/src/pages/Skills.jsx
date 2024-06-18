@@ -199,12 +199,12 @@ const Skills = () => {
         <div>
             <div data-aos="fade-up"
                 data-aos-duration="3000">
-                <div style={{ display: "flex", justifyContent: "space-evenly", alignContent: "center", alignItems: "center" }} name="skills">
-                    <div className="relative overflow-hidden flex h-full w-[50%] items-center justify-center">
-                        <IconCloud iconSlugs={slugs} />
+                <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center text-center p-10' name="skills">
+                    <div className=''>
+                        <p className='text-white text-5xl lg:text-7xl  border-l-4 border-red-600 pl-5' name="features">Tech Stacks</p>
                     </div>
-                    <div className='w-[20%]'>
-                        <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5' name="features">Tech Stacks</h1>
+                    <div className="relative overflow-hidden flex h-full items-center justify-center">
+                        <IconCloud iconSlugs={slugs} />
                     </div>
                 </div>
             </div>

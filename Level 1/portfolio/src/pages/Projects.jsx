@@ -47,11 +47,11 @@ function Projects() {
 
     return (
         <>
-            <div style={{ marginBottom: "100px" }} name="projects">
+            <div style={{ marginBottom: "100px", marginTop:"50px" }} name="projects">
                 <div data-aos="zoom-in-up"
                     data-aos-duration="3000">
-                    <div style={{ marginTop: "100px", display: "flex", justifyContent: "center" }}>
-                        <h1 className='text-white text-7xl border-l-4 border-red-600 pl-5 mb-3' name="features">Projects</h1>
+                    <div className='flex justify-center'>
+                        <h1 className='text-white text-5xl lg:text-7xl border-l-4 border-red-600 pl-5 mb-3' name="features">Projects</h1>
                     </div>
                     <div style={{ margin: "50px" }}>
                         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

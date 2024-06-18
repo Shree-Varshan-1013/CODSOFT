@@ -5,8 +5,8 @@ const ChatBot = () => {
 
 
     return (
-        <div className='flex justify-between m-10'>
-            <div className='w-[50%]'>
+        <div className='grid grid-cols-2'>
+            <div className=''>
                 <div>
                     <div className='mr-20'>
                         <h1 className='mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl'>Shape Your <span id="special-text" style={{ color: "white" }}>Destiny</span>
@@ -19,7 +19,7 @@ const ChatBot = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[50%] mb-10'>
+            <div className=''>
                 <div className="mockup-browser border bg-base-300">
                     <div className="mockup-browser-toolbar">
                         <div className="input border border-base-300">https://dialogduo.com</div>

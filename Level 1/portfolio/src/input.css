@@ -7,9 +7,7 @@ html {
   scroll-behavior: initial;
 }
 
-.video-container video {
-  @apply top-[40%] left-1/2 min-w-full min-h-full w-auto h-auto;
-}
+
 
 @font-face {
   font-family: "Aeonik";
@@ -83,7 +81,6 @@ body {
 }
 
 .text--gradient {
-  font-size: 72px;
   background: rgb(104, 184, 209);
   background: linear-gradient(
     90deg,

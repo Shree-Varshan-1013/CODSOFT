@@ -24,18 +24,18 @@ const ContactPage = () => {
 
     return (
         <>
-            <div className="hidden lg:flex" style={{ color: "black", backgroundColor: "white", padding: "80px" }} name="contact">
-                <div className="w-full mx-auto px-4">
-                    <div>
-                        <h2 style={{ fontWeight: "900", fontSize:"72px" }}>
+            <div className="grid p-12 bg-white text-black" name="contact">
+                <div className="">
+                    <div className="text-5xl">
+                        <h2 className="font-extrabold">
                             Contact
                         </h2>
-                        <h1 style={{fontSize:"30px", lineHeight: "50px", marginBottom: "10px" }}>
+                        <h1 className="font-light mt-3 mb-3">
                             Reach me out
                         </h1>
                     </div>
                     <div>
-                        <ul className="flex" style={{ cursor: 'none' }}>
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-3" style={{ cursor: 'none' }}>
                             {
                                 contactMethods.map((item, idx) => (
                                     <li key={idx} style={{ cursor: "initial", marginRight: "30px", fontSize:"20px" }}>
@@ -45,7 +45,7 @@ const ContactPage = () => {
                                             </div>
                                             <h4 style={{ fontWeight: "800", marginLeft: "10px" }}>{item.title}</h4>
                                         </div>
-                                        <div className="mt-3 flex items-center gap-x-3">
+                                        <div className="">
                                             <p style={{ marginTop: "5px" }}>{item.contact}</p>
                                         </div>
                                     </li>
@@ -54,40 +54,7 @@ const ContactPage = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="flex lg:hidden" style={{ color: "black", backgroundColor: "white", padding: "30px" }} name="contact">
-                <div name="contact">
-                    <div className="w-full mx-auto">
-                        <div>
-                            <h2 style={{ fontWeight: "700", fontSize: "20px" }}>
-                                Contact
-                            </h2>
-                            <h1 style={{ lineHeight: "50px", marginBottom: "10px", fontSize: "35px" }}>
-                                Let us know how we can help
-                            </h1>
-                        </div>
-                        <div>
-                            <ul className="flex" style={{ cursor: 'none', flexDirection: "column" }}>
-                                {
-                                    contactMethods.map((item, idx) => (
-                                        <li key={idx} style={{ cursor: "initial", marginRight: "30px" }}>
-                                            <div style={{ display: "flex" }}>
-                                                <div>
-                                                    {item.icon}
-                                                </div>
-                                                <h4 style={{ fontWeight: "800", marginLeft: "6px", fontSize: "20px" }}>{item.title}</h4>
-                                            </div>
-                                            <div className="mt-3 flex items-center">
-                                                <p style={{ marginTop: "1px" }}>{item.contact}</p>
-                                            </div>
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>  
         </>
     );
 };
